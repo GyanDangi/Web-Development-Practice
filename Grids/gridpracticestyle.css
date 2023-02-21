@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.container{
+    display: grid;
+    height: 500px;
+    border: 3px solid red;
+    background-color: yellow;
+    grid-template-columns: 80px 1fr 80px;
+
+    grid-template-rows:50px 300px 50px;
+    gap: 10px;
+
+}
+.box{
+    border: 1px solid black;
+    /* height: 100px; */
+    background-color: aqua;
+}
+
+#box1, #box4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#box2, #box5, #box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}

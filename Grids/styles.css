@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 3px solid red;
+    display: grid;
+    /* display: flex; */
+
+    /* 1st way to make columns in grid */
+    /* grid-template-columns: 100px 100px 210px ; */
+    
+    /* 2nd way to make columns in grid */
+    /* grid-template-columns: repeat(3,1fr); */
+
+    /* 3rd way make columns in grid */
+    grid-template-columns:repeat(3,1fr);
+
+    grid-template-rows: repeat(3,1fr);
+    /* flex-wrap: nowrap; */
+
+    gap: 10px;
+}
+
+.box{
+    background-color: aqua;
+    border: 3px solid black;
+    /* width: 80px; */
+    /* height: 80px; */
+}
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
