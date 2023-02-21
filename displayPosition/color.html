@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color in Css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            height: 33%;
+            /* width: 200px; */
+            border: 2px solid hsl(69, 90%, 48%);
+            /* display: inline-block; */
+            /* margin: auto; */
+        }
+
+        .container {
+            height: 50px;
+            border: 2px solid red;
+            display: inline-block;
+            width: 33%;
+            margin: 5px 0px;
+
+        }
+
+        #box1 {
+            background-color: #ff0000;
+
+            /* This is rgb color */
+            background-color: rrgb(255, 0, 0);
+        }
+
+        #box2 {
+            background-color: #00ff00;
+            /* This is rgb color */
+            background-color: rgb(0, 255, 0);
+        }
+
+        #box3 {
+            background-color: #0000ff;
+            /* This is rgb color */
+            background-color: rgb(0, 0, 255);
+        }
+
+        #box4 {
+            background-color: #000000;
+            color: white;
+            /* This is rgb color */
+            background-color: rgb(0, 0, 0);
+        }
+
+        #box5 {
+            /* background-color: #ffffff; */
+            /* This is rgb color */
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h3>HexaColors:</h3>
+        <div class="container" id="box1">
+            <h4>Hexacolor Red</h4>
+        </div>
+        <div class="container" id="box2">
+            <h4>Hexacolor Green</h4>
+        </div>
+        <div class="container" id="box3">
+            <h4>Hexacolor Blue</h4>
+        </div>
+        <div class="container" id="box4">
+            <h4>Hexacolor white</h4>
+        </div>
+        <div class="container" id="box5">
+            <h4>Hexacolor Black</h4>
+        </div>
+    </div>
+</body>
+
+</html>

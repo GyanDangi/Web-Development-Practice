@@ -1,0 +1,78 @@
+.container{
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+
+    /* Flex direction: */
+    flex-direction: column; /*  towards cross direction or vertical stack */
+    flex-direction: row;/*  towards main direction or horizontal stack */
+
+    /* flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+
+    /* flex-wrap */
+    /* jitna possible hai utna rhenga aur suqize krne ke badd next line me chala jayenga */
+    flex-wrap: wrap;
+
+    /* next line me nahi jayenga patla hota jayenga */
+    /* flex-wrap: nowrap; */
+
+    /* reverse order me wrap hota jayenga */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow se hum flex direction aur flex-wrap dono ka use ek sath kr sakte hai */
+
+    /* flex-flow:  wrap; */
+
+
+
+    /* Justify-Content */
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* sabhi ke beech me equal jagah left aur right se bhi */
+    /* justify-content: space-evenly;  */
+
+    /* left right se bilkul jagah nahi baki sabhi jagah se equal jagah */
+    /* justify-content: space-between; */
+
+
+    /* justify-content: center; */
+
+        /* left aur right se barobar jagah nahi baki sabhi jagah se barobar jagah */
+    /* justify-content: space-around; */
+
+    /* align-items: flex-start;
+
+    align-items: flex-end;
+
+    align-items: center;
+
+    align-items: stretch; */
+
+
+    /*  to make everything at center */
+    align-items: center;
+    justify-content: center;
+
+    /* gap se hum bas bich me hi de sakte hai  */
+    /* gap: 10px; */
+
+
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around ;
+    gap:10px;
+    text-align: center;
+
+
+
+
+}
+.box{
+    border: 1px solid brown;
+    background-color: yellow;
+    width: 450px;
+
+}

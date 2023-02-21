@@ -1,0 +1,25 @@
+.box{
+
+    background-color: aqua;
+    /* transform: translate(50%, 230px); */
+    /* transform: translate(100px,50px); */
+
+    /* transform: translateY(200px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(50px); */
+
+
+    /* TO rotate */
+    /* transform: rotate(90deg); */
+    /* positive angle clockwise move */
+    /* when negetive angle anti-clockwise move */
+
+    transform: scale(1,2);
+    transform: skew(-54deg);
+
+
+}
+hr{
+    transform: rotate(45deg);
+
+}

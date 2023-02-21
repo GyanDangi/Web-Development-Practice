@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position In CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid yellow;
+            background-color: orange;
+            height: 1000px;
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+            padding: 5px;
+            /* background-color: aquamarine; */
+        }
+
+        #box3 {
+
+            /*  Relative to its normal position and leave a gap */
+            /* position: relative;
+            top: 200px;
+            left: 200px; */
+
+            /* Relative to the first parent here parent is container and not leave a gap*/
+            /* position: absolute;
+            top: 200px;
+            left: 200px; */
+
+            /* position: fixed;
+            right: 1px; */
+            
+        }
+        #box2{
+            /* position: sticky;
+            top: 3px; */
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
