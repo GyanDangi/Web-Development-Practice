@@ -1,0 +1,28 @@
+.container{
+    border: 1px solid red;
+    height: 400px;
+    width: 500px;
+    background-color: yellow;
+}
+.box{
+    border: 1px solid orange;
+    width: 150px ;
+    height: 150px;
+    background-color: aqua;
+    margin: 23px;
+
+    /* Transition property kis property pe lagana hai */
+    /* transition-property: transform; */
+    /* transition: all 2s ease; */
+    transition: all 2s ease;
+
+    /* own created transition effect */
+    /* transition: all 1s cubic-bezier(1,-0.01, 0, 1.01); */
+}
+.box:hover{
+    background-color: brown;
+    /* transform: scale(2); */
+    /* transform: rotate(360deg); */
+    transform: translateX(500px) scale(2) rotate(360deg);
+
+}
