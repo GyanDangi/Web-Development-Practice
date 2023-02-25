@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --darkblue:#0a1fbb7e;
+}
+:root
+/* {
+    /* --darkblue:#0a1fbb7e; 
+} */
+.container{
+    border: 1px solid yellow;
+    background-color: lawngreen;
+    height: 400px;
+    width: 400px;
+    /* We are accessing outside of the scope variable so no changes will replicated */
+    background-color: var(--darkblue);
+
+}
+.box{
+    border: 1px solid red;
+    background-color: beige;
+    color: hotpink;
+    font-size: 2rem;
+    /* this variable has scope only in box we can't use it outside of box */
+    /* --darkblue:#0a1fbb7e; */
+    color: var(--darkblue);
+}
