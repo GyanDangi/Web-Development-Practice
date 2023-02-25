@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid red;
+    height: 215px;
+
+
+}
+.box{
+    border: 2px solid black;
+    width: 212px;
+    height: 212px;
+    background-color: aqua;
+    animation-name: gyan;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: 5; */
+    /* animation-iteration-count: 2; */
+    animation-delay: 1s;
+    /* animation-direction: alternate-reverse; */
+    animation-direction: alternate;
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
+    border-width: 6px;
+    border-style: dotted solid double dashed;
+    padding: -1px;
+    border-top: solid 4px red;
+}
+
+@keyframes gyan {
+    0%{
+        background-color: orange;
+        width: 212px;
+    }
+    50%{
+        background-color: white;
+        width: 50%;
+
+    }
+    100%{
+        background-color: green;
+        width: 100%;
+    }
+}
