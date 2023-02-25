@@ -1,0 +1,37 @@
+.container{
+    height: 700px;
+    width: 600px;
+    border: 3px solid black;
+    display: grid;
+    background-color: yellow;
+
+    grid-template-columns:600px;
+    grid-template-rows: 30px 1fr 1fr 30px;
+
+    grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft";
+
+
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+#header{
+    grid-area: hd;
+
+}
+#content{
+    grid-area: main;
+
+}
+#footer{
+    grid-area: ft;
+
+}
+#sidebar{
+    grid-area: side;
+}
