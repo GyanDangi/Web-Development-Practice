@@ -1,0 +1,321 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --bgOrange: #e84849;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.container{
+    width: 1200px;
+   margin: 0 auto;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+.logo{
+    width: 80px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+
+}
+.logo-text{
+    margin-left: -1.2rem;
+    font-size:28px;
+
+}
+.nav-items{
+    display: flex;
+    padding: 0 4em;
+    gap: 2rem;
+}
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-items div a{
+  
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.nav-items div:hover{
+    transition:0.8s;
+    font-weight: bold;
+}
+.hero-section{
+    position: relative;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+
+}
+.faded-text{
+    position: absolute;
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231,231,231);
+
+    font-weight: bold;
+    bottom: -16%;
+    left: 5%;
+    transition: all 3s ;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.hero-section-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.hero-section-heading{
+
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+
+}
+.hero-section-subheading{
+    font-size: 45px;
+    line-height: 45px;
+
+}
+.role{
+    color: blue;
+    font-weight: 800;
+}
+.hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;  
+}
+.pink-btn{
+    background-color: var(--bgOrange);
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: solid 3px transparent;
+    font-weight: 500;
+    font-size: 18px;
+    transition:all 0.5s;
+    transform: scale(1);
+
+}
+.pink-btn::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: left;
+    transition: all 0.8s;
+    border:1px solid blue;
+
+
+}
+.pink-btn:hover::before{
+    transform: scaleX(1);
+    border:1px solid red;
+   
+}
+.pink-btn:hover{
+    border: solid 3px var(--bgOrange);
+    color: black;
+    transform: scale(1.05);
+    font: bold;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+.hero-section-right{
+    position: relative;
+
+}
+.absolute{
+    position: absolute;
+    
+}
+.UserImages{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transform: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+.UserImages img{
+    z-index: -9;
+
+}
+@keyframes scaleImage {
+    0%{
+        filter: grayscale(1);
+        transform: scale(1);
+
+    }
+    50%{
+        filter: grayscale(0);
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px black;
+
+    }
+    100%{
+        filter: grayscale(1);
+        transform: scale(1);
+
+    }
+}
+
+.icons-dots{
+    z-index: 9;
+    bottom: -1rem;
+    right: 0;
+    animation-name: dotsAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes dotsAnimation {
+    0%{
+        transform: translateY(0px);
+
+    }
+    50%{
+        transform: translateY(-15px);
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+.icons-cube{
+    top: 0.8em;
+    right: 1em;
+    z-index: 9;
+    animation-name: cubeRotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cubeRotate {
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+
+    }
+}
+.icons-circle{
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    animation-name: circleMove;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes circleMove {
+    0%{ 
+        left: 0;
+        bottom: 0;
+
+    }
+    50%{
+        left: 5%;
+        bottom: 10%;
+
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+
+    } 
+}
+.icons-zigzags{
+    top: 1em;
+    left: 0.3em;
+    z-index: 9;
+    animation: zigzagMove 5s ease-in infinite;
+}
+@keyframes zigzagMove {
+    0%{ 
+        left: 0;
+        bottom: 0;
+
+    }
+
+    50%{
+        left: 5%;
+        bottom: 10%;
+
+    }  
+    100%{
+        left: 0;
+        bottom: 0;
+    } 
+}
+
+.icons-plus{
+    z-index: 9;
+    left: 50%;
+    top:-0.8rem;
+    animation: plus 5s ease-in infinite;
+
+}
+@keyframes plus {
+    50%{
+        top: 3%;
+        left: 40%;
+        
+    }
+    
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="userAsset/NavLogo.jpg" class="logo">
+                    <div class="logo-text">hon Due</div>
+                </div>
+                <div class="nav-items">
+                  <div><a href="#Home">Home</a></div>
+                  <div><a href="#Projects">Projects</a></div>
+                  <div><a href="#Contact Me">Contanct Me</a></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="faded-text">John Doe</div>
+            <div class="hero-section-left">
+           
+                <div class="hero-section-heading">Hi! John Doe</div>
+               
+                <div class="hero-section-heading hero-section-subheading">
+                    I am <span class="role"></span>
+                </div>
+
+                <div class="hero-section-description">
+                    I am a software Developer. Here is my Portfolio Website.
+                    Here You will learn about my journey as software Developer.
+                </div>
+
+                <div class="pink-btn">Hire Me</div>
+            </div>
+
+            <div class="hero-section-right">
+                <div class="absolute icons icons-dots">
+                    <img src="userAsset/dots.png" alt="">
+                </div>
+                <div class="absolute icons icons-cube">
+                    <img src="userAsset/cube.png" alt="">
+                </div>
+                <div class="absolute icons icons-circle">
+                    <img src="userAsset/circle.png" alt="">
+                </div>
+                <div class="absolute icons icons-zigzags">
+                    <img src="userAsset/zigzags.png" alt="">
+                </div>
+                <div class="absolute icons icons-plus">
+                    <img src="userAsset/plus.png" alt="">
+                </div>
+                <div class="UserImages">
+                    <img src="userAsset/UserImage.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <div class="project-section">
+            <h2 class="page-header"></h2>
+
+            <div class="project-container">
+                <div class="project-card" id="projct1">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img src="stack/HTML.png" alt="" class="project-skills">
+                            <img src="stack/CSS.png" alt="" class="project-skills">
+                            <img src="stack/Javascript.svg" alt="" class="project-skills">
+                            <img src="stack/Express.png" alt="" class="project-skills">
+                            <img src="stack/NextJsCircle.png'" alt="" class="project-skills">
+                            <img src="stack/Tailwind.png" alt="" class="project-skills">
+                            <img src="stack/NodeJs.svg" alt="" class="project-skills">
+                            <img src="stack/MongoDB.svg" alt="" class="project-skills">
+                            <img src="stack/Redux.svg" alt="" class="project-skills">
+                            <img src="stack/Vercel.svg" alt="" class="project-skills">
+                        </div>
+
+                        <h2 class="project-heading">Tint & Orange</h2>
+
+                        <div class="project-subheading">It is a car modification company which provide you sheets to protect your car from scratch</div>
+
+                        <div class="btn-group">
+                            <button class="pink-btn btn-project">Read More</button>
+                           <a href="">
+                            <i title="githublink" class="fa-brands fa-github"></i>
+                           </a>
+                            <a href="">
+                                <i title="livelink" class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</body>
+</html>
