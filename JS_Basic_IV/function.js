@@ -75,14 +75,88 @@ console.log(interest(1000,undefined,8));
 
 // function to print objects
 
+// let person={
+//     fName:'Gyan',
+//     LName:'Prakash'
+// };
+
+
+// this is read only function we can 't set
+// function fullName(){
+//     return `${person.fName} ${person.LName}`;
+// }
+// console.log(fullName());
+
+// Getter :access functions properties
+// Setter :change or manipulate functions properties
+
+
 let person={
     fName:'Gyan',
-    LName:'Prakash'
+    LName:'Prakash',
+
+    get fullName(){
+        return `${this.fName} ${this.LName}`
+    },
+ 
+    set fullName(value){
+        let parts= value.split(' ');
+        this.fName=parts[0];
+        this.LName=parts[1];
+    }
 };
+person.fullName='Rahul Kumar'   
+console.log(person.fullName);
 
-function fullName(){
-    return `${person.fName} ${person.LName}`;
+
+// error handling
+
+try{
+    person.fullName=1;
 }
-console.log(fullName());
+catch(e){
+    console.log('You have not string in full name');
+}
 
+// Scope:
+
+// let a=9;
+// function walking(){
+//     let a=10;
+//     console.log(a);
+// }
+// walking();
+
+// function ScopeofLet(){
+//     let b=10;
+// }
+// console.log(b); // this is out of scope error
+
+// function scopeOfVar(){
+//     var b=0;
+// }
+
+// console.log(b); // var ka bhi scope function tak hi hai..
+
+// if(true){
+//     var c=10;
+// }
+// console.log(c);
+
+
+// reducing Array using reduce function
+
+
+let arr=[1,2,3,4];
+
+// let totalsum=0;
+// for(let value of arr){
+//     totalsum += value;
+// }
+// console.log(totalsum);
+
+// reduce function implementation
+
+let  totalsum1= arr.reduce((storingvalue,currentvalue)=>storingvalue+currentvalue);
+console.log(totalsum1);
 
