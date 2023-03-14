@@ -203,7 +203,7 @@
 // mapping in Array
 
 
-let array=[1,2,3,4,5];
+// let array=[1,2,3,4,5];
 
 //  let mapped= array.map(function(value){
 //     return 'studentNO_'+value;
@@ -219,9 +219,9 @@ let array=[1,2,3,4,5];
 // Mapping with objects:
 
 
-let number=[1,2,-9,-11];
+// let number=[1,2,-9,-11];
 
-let filtered=number.filter(value=> value>=0); 
+// let filtered=number.filter(value=> value>=0); 
 
 // let items=filtered.map(num=>{
     
@@ -232,9 +232,9 @@ let filtered=number.filter(value=> value>=0);
 //     return {value:number}
 // }
 //    );
-let items=filtered.map(number => ({value:number}));
+// let items=filtered.map(number => ({value:number}));
 
-console.log(items);
+// console.log(items);
 
 // chaining
 // let items=number
@@ -243,8 +243,42 @@ console.log(items);
 
 // console.log(items);
 
+let arr = [ {val:10,name:'Aashu'},
+            {val:11,name:'Mamu'},
+            {val:12,name:'Mamuu'},
+                {val:13,name:'Mamu1'}
+    ];
+
+console.log(arr);
+
+// We need to make a practical of the callback function as we cannot use the includes function like in the primitice array case 
+
+// let res = false;
+// let hello = arr.find(function(hello){
+
+//     if(hello.val == 10 && hello.name == 'Aashu'){
+//           res == true;
+//        }
+//      else{
+//           res == false;
+//      }
+//      return res;
+// });
+
+// console.log(hello);
 
 
+let n= [
+    {id:1},
+    {id:4},
+    {id:5},
+    {id:6},
+    {id:12},
+    {id:13}
+];
+
+let search = n.find(n=> (n%2) != 0);
+console.log(search)
 
 
 
