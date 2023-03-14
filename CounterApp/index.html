@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Web-Applicaiton</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div class=" w-[100vw] h-[100vh] bg-[#344151] flex items-center justify-center">
+
+        <div class="flex flex-col items-center  justify-center gap-7 ">
+            <div class="font-medium  text-[#0398d4] text-[20px]">Increment And Decrement</div>
+
+
+            <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5 box-border  m-1">
+
+                <!--Negative Button  -->
+                <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5 cursor-pointer">
+                    <i class="fa-solid fa-minus bg-red-500 rounded-sm"></i>
+                </button>
+
+                <div id="counter" class=" font-bold select-none bg-yellow-300 rounded-sm">
+                    0
+                </div>
+                <!-- Positive Button -->
+                <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5 cursor-pointer">
+                    <i class="fa-sharp fa-solid fa-plus bg-green-500 rounded-sm"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f33e04ec02.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
